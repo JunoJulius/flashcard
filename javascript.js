@@ -74,7 +74,7 @@ function showCards() {
   qtext.appendChild(q);
 
   const atext   = document.createElement("p");
-  const a       = document.createTextNode(question);
+  const a       = document.createTextNode(answer);
   atext.appendChild(a);
 
   // ADD BUTTONS
@@ -124,6 +124,7 @@ function buttonNo() {
 
 function showAnwser() {
 
+    document.getElementById("flashcardq" ).style.display = "none";
 }
 
 ////////////////////////////////////
