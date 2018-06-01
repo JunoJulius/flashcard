@@ -1,6 +1,9 @@
 *{
 font-family: 'Roboto Condensed', sans-serif;
 }
+body{
+  padding: 0;
+}
 h1{
   font-size: 42pt;
 }
@@ -41,7 +44,7 @@ justify-content: space-around;
 
 .flex-around{
   display:flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 30px;
 position: relative;
