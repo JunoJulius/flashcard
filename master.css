@@ -3,6 +3,12 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 body{
   padding: 0;
+  /* background-image: url("zen.jpg");
+  background-repeat:no-repeat;
+  background-size: cover; */
+  background-color: rgba(193, 252, 157, 0.64);
+  overflow-y: hidden;
+
 }
 h1{
   font-size: 42pt;
@@ -12,7 +18,7 @@ h1{
   text-align: center;
 }
 
-.flashCard{
+.flashCards{
 display: flex;
 justify-content: space-around;
 }
