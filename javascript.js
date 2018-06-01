@@ -1,3 +1,5 @@
+
+
 let cards = []
 
 
@@ -20,6 +22,16 @@ function addCard() {
 function getCard() {
   let randomIndex = Math.floor(Math.random() * cards.length);
   return cards[randomIndex];
-
-
 }
+
+
+function makeTestCards() {
+  for (let i = 0; i < 12; i++) {
+    const question  = `Question ${i}`;
+    const answer    = `Answer ${i}`;
+    const card      = new Card(question, answer);
+    cards.push(card);
+  }
+}
+
+makeTestCards();
