@@ -15,3 +15,14 @@ justify-content: space-around;
   line-height: 100px;
 
 }
+
+.addNewQ{
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  width: 300px;
+  height: 300px;
+  padding:10px;
+  border: 2px solid rgb(117, 117, 117);
+
+}
