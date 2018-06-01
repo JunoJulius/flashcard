@@ -73,19 +73,16 @@ function showCards() {
 
   // ADD BUTTONS
 
-// show button
   const answerS = document.createElement("input");
-    answerS.setAttribute('type', "submit");
-    answerS.setAttribute('id', "answerS");
-    answerS.setAttribute('onclick', "showAnwser()");
+    answerY.setAttribute('type', "submit");
+    answerY.setAttribute('id', "answerS");
+    answerY.setAttribute('onclick', "showAnwser()");
 
-// yes button
   const answerY = document.createElement("input");
     answerY.setAttribute('type', "submit");
     answerY.setAttribute('id', "answery");
     answerY.setAttribute('onclick', "buttonYes()");
 
-// no button
   const answerN = document.createElement("input");
     answerY.setAttribute('type', "submit");
     answerY.setAttribute('id', "answern");
@@ -139,20 +136,9 @@ makeTestCards();
 
 // Random background color for flashcard
 
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function setColor() {
-    var element = document.getElementsByClassName("card");
-
-    var r = getRandomInt(0, 255);
-    var g = getRandomInt(0, 255);
-    var b = getRandomInt(0, 255);
-console.log(element.length);
-    element.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-    document.getElementById("flashCard").innerHTML = r + " " + g + " " + b;
-
-};
-setColor();
+function ran_col() { //function name
+              var color = '#'; // hexadecimal starting symbol
+              var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0']; //Set your colors here
+              color += letters[Math.floor(Math.random() * letters.length)];
+              document.getElementById('flashCard').style.background = color; // Setting the random color on your div element.
+          }

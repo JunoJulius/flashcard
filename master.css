@@ -6,7 +6,7 @@ body{
   /* background-image: url("zen.jpg");
   background-repeat:no-repeat;
   background-size: cover; */
-  background-color: rgba(193, 252, 157, 0.64);
+  background-color: rgba(194, 252, 158, 0.38);
   overflow-y: hidden;
 
 }
@@ -18,7 +18,7 @@ h1{
   text-align: center;
 }
 
-.flashCards{
+#flashCards{
 display: flex;
 justify-content: space-around;
 }
@@ -26,6 +26,7 @@ justify-content: space-around;
 .card{
   width: 40vh;
   height: 40vh;
+  color:white;
   background: rgb(153, 236, 207);
   border-radius: 20px;
   position: relative;
