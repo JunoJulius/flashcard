@@ -134,6 +134,11 @@ makeTestCards();
 
 
 
+
+
+
+
+
 // Random background color for flashcard
 
 function ran_col() { //function name
