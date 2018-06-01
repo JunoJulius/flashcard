@@ -11,12 +11,15 @@ class Card {
 }
 
 function addCard() {
-  const question = document.getElementById().value;
-  const answer = document.getElementById().value;
-  const card = new Card(question, answer);
+  const question  = document.getElementById("question").value;
+  const answer    = document.getElementById("answer").value;
+  const card      = new Card(question, answer);
   cards.push(card);
 }
 
-function displayCards() {
-  
+function getCard() {
+  let randomIndex = Math.floor(Math.random() * cards.length);
+  return cards[randomIndex];
+
+
 }
