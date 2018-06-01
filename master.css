@@ -1,3 +1,14 @@
+*{
+font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+  font-size: 42pt;
+}
+
+.header{
+  text-align: center;
+}
+
 .flashCard{
 display: flex;
 justify-content: space-around;
@@ -17,20 +28,20 @@ justify-content: space-around;
 }
 
 .addNewQ{
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   width: 300px;
   height: 300px;
   padding:10px;
-  border: 2px solid rgb(117, 117, 117);
+  border: 2px solid rgb(117, 117, 117); */
 
 }
 
 .flex-around{
   display:flex;
   justify-content: flex-end;
-  align-items: baseline;
+  align-items: center;
   padding: 30px;
-
+position: relative;
 }
