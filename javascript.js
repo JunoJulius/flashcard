@@ -73,16 +73,19 @@ function showCards() {
 
   // ADD BUTTONS
 
+// show button
   const answerS = document.createElement("input");
-    answerY.setAttribute('type', "submit");
-    answerY.setAttribute('id', "answerS");
-    answerY.setAttribute('onclick', "showAnwser()");
+    answerS.setAttribute('type', "submit");
+    answerS.setAttribute('id', "answerS");
+    answerS.setAttribute('onclick', "showAnwser()");
 
+// yes button
   const answerY = document.createElement("input");
     answerY.setAttribute('type', "submit");
     answerY.setAttribute('id', "answery");
     answerY.setAttribute('onclick', "buttonYes()");
 
+// no button
   const answerN = document.createElement("input");
     answerY.setAttribute('type', "submit");
     answerY.setAttribute('id', "answern");
