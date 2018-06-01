@@ -18,11 +18,19 @@ justify-content: space-around;
 
 .addNewQ{
   display: flex;
-  justify-content: flex-end;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 300px;
   padding:10px;
   border: 2px solid rgb(117, 117, 117);
+
+}
+
+.flex-around{
+  display:flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 30px;
 
 }
