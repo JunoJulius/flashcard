@@ -128,3 +128,28 @@ function makeTestCards() {
 }
 
 makeTestCards();
+
+
+
+
+
+
+// Random background color for flashcard
+
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function setColor() {
+    var element = document.getElementsByClassName("card");
+
+    var r = getRandomInt(0, 255);
+    var g = getRandomInt(0, 255);
+    var b = getRandomInt(0, 255);
+console.log(element.length);
+    element.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+    document.getElementById("flashCard").innerHTML = r + " " + g + " " + b;
+
+};
+setColor();
