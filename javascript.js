@@ -35,7 +35,12 @@ function getIndexOfCard() {
   activeCards.push(index);
 }
 
+function clearDiv(id) {
+  document.getElementById(id).innerHTML = "";
+}
+
 function showCards() {
+  clearDiv("flashCards");
   let lengte;
   if (activeCards.length > 3) {
     lengte = 4;
@@ -52,10 +57,11 @@ function showCards() {
 
 
   /// build DIV'S
-  const container = document.getElementById("flashcards");
+  const container = document.getElementById("flashCards");
 
   const divFlashcard    = document.createElement("div");
     divFlashcard.setAttribute('id',"flashcard");
+    divFlashcard.setAttribute('class', "card");
   const divFlashcardq   = document.createElement("div");
     divFlashcardq.setAttribute('id',"flashcardq");
   const divFlashcarda   = document.createElement("div");
@@ -78,18 +84,20 @@ function showCards() {
     answerS.setAttribute('type', "submit");
     answerS.setAttribute('id', "answerS");
     answerS.setAttribute('onclick', "showAnwser()");
+    answerS.setAttribute('value', "Show Answer");
 
 // yes button
   const answerY = document.createElement("input");
     answerY.setAttribute('type', "submit");
     answerY.setAttribute('id', "answery");
     answerY.setAttribute('onclick', "buttonYes()");
-
+    answerY.setAttribute('value', "Yes")
 // no button
   const answerN = document.createElement("input");
-    answerY.setAttribute('type', "submit");
-    answerY.setAttribute('id', "answern");
-    answerY.setAttribute('onclick', "buttonNo()");
+    answerN.setAttribute('type', "submit");
+    answerN.setAttribute('id', "answern");
+    answerN.setAttribute('onclick', "buttonNo()");
+    answerN.setAttribute('value', "No")
 
 /// Build Everything
     divFlashcardq.appendChild(qtext);
