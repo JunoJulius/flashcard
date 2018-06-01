@@ -16,7 +16,7 @@ justify-content: space-around;
 
 .card{
   width: 300px;
-  height: 300px;
+  height: 330px;
   background: rgb(153, 236, 207);
   border-radius: 20px;
   position: relative;
@@ -28,13 +28,14 @@ justify-content: space-around;
 }
 
 .addNewQ{
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction:column;
   width: 300px;
   height: 300px;
   padding:10px;
-  border: 2px solid rgb(117, 117, 117); */
+  border: 2px solid rgb(117, 117, 117);
 
 }
 
